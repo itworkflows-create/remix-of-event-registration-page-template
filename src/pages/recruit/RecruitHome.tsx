@@ -19,7 +19,6 @@ import logisticsHeroMobile from "@/assets/hero/career-logistics-mobile.jpg";
 import warehouseHero from "@/assets/hero/career-warehouse.jpg";
 import warehouseHeroMobile from "@/assets/hero/career-warehouse-mobile.jpg";
 import workersPlaneHero from "@/assets/hero/workers-plane-recruitment-hero.png";
-import teamGroup from "@/assets/team/team-group.jpg";
 
 const roles = [
   {
@@ -248,45 +247,7 @@ export default function RecruitHome() {
         </div>
       </section>
 
-      {/* Team introduction */}
-      <section className="overflow-hidden bg-background py-20 lg:py-28">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="mb-10 text-center sm:mb-12">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-ro-red">The people behind your journey</span>
-            <h2 className="mt-4 font-display text-3xl font-bold tracking-tight text-ro-blue sm:text-4xl lg:text-5xl">
-              Meet the team supporting you
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-muted-foreground sm:text-base">
-              Dedicated specialists working together to guide you from your first application to your departure.
-            </p>
-          </div>
-          <motion.div
-            initial={{ opacity: 0, y: 28 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="relative overflow-hidden rounded-[2rem] bg-ro-blue shadow-2xl shadow-ro-blue/15"
-          >
-            <div>
-              <div className="relative aspect-[3/2] overflow-hidden bg-slate-200">
-                <img src={teamGroup} alt="The complete Elladria Lanka Careers team" width={1599} height={1332} loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-1000 hover:scale-[1.015]" />
-                <div className="absolute inset-0 bg-gradient-to-t from-ro-blue/35 via-transparent to-transparent" />
-                <div className="absolute bottom-5 left-5 flex items-center gap-3 rounded-2xl border border-white/20 bg-white/90 px-4 py-3 text-ro-blue shadow-xl backdrop-blur sm:bottom-7 sm:left-7">
-                  <span className="font-display text-2xl font-extrabold">7</span>
-                  <span className="text-xs font-semibold leading-tight">Dedicated<br />specialists</span>
-                </div>
-              </div>
-              <div className="relative px-7 py-10 text-white sm:px-10 sm:py-12 lg:px-14">
-                <div className="absolute right-0 top-0 h-56 w-56 rounded-full bg-primary/25 blur-3xl" aria-hidden="true" />
-                <div className="relative grid items-end gap-7 lg:grid-cols-[1fr_0.75fr]">
-                  <div><span className="text-xs font-bold uppercase tracking-[0.2em] text-ro-yellow">People behind your journey</span><h2 className="mt-4 font-display text-3xl font-bold leading-tight sm:text-4xl">A real team beside you at every step.</h2></div>
-                  <div><p className="text-sm leading-7 text-white/70 sm:text-base">From recruitment and employer matching to visas, travel, and settling in, our specialists make a complex international journey feel clear and manageable.</p><Link to="/about" className="mt-6 inline-flex w-fit items-center gap-2 rounded-full bg-ro-yellow px-6 py-3 text-sm font-semibold text-ro-blue transition-transform hover:-translate-y-0.5">Meet our team <ArrowRight className="h-4 w-4" /></Link></div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      {/* Team introduction is temporarily hidden. */}
 
       {/* FAQ */}
       <FaqSection />
