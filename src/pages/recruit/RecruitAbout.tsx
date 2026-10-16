@@ -4,7 +4,6 @@ import aboutUsHeader from "@/assets/about-us-collage-header.jpg";
 import aboutUsHeaderMobile from "@/assets/about-us-collage-header-mobile.jpg";
 import slbfeLogo from "@/assets/slbfe-logo.webp";
 import malindSriyaratna from "@/assets/team/malind-sriyaratna.jpeg";
-import rasikaPrasad from "@/assets/team/rasika-prasad.jpeg";
 import employeePerformanceRecognition from "@/assets/certificates/employee-performance-recognition.jpg";
 import licenceAwarenessProgramme from "@/assets/certificates/new-licence-awareness-programme.jpg";
 
@@ -202,36 +201,7 @@ export default function RecruitAbout() {
         </div>
       </section>
 
-      <section className="mt-8 overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-sm" aria-labelledby="general-manager-title">
-        <div className="grid items-stretch lg:grid-cols-[1.18fr_0.82fr]">
-          <div className="relative flex flex-col justify-center overflow-hidden px-7 py-12 sm:px-12 lg:px-16 lg:py-16">
-            <div className="pointer-events-none absolute -bottom-24 -left-24 h-64 w-64 rounded-full bg-ro-blue/10 blur-3xl" aria-hidden="true" />
-            <div className="relative">
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-ro-red">Management</span>
-              <h2 id="general-manager-title" className="mt-4 font-display text-3xl font-bold tracking-tight text-ro-blue sm:text-4xl">
-                Mr. Rasika Prasad
-              </h2>
-              <p className="mt-2 font-display text-base font-semibold text-slate-600">General Manager | Qualified Visa Consultant</p>
-              <div className="mt-7 h-1 w-16 rounded-full bg-gradient-to-r from-ro-blue via-ro-yellow to-ro-red" aria-hidden="true" />
-              <p className="mt-7 max-w-xl text-base leading-8 text-slate-600">
-                Business professional with 17+ years of experience in sales, marketing, business development, and top management. Skilled in strategic planning, leadership, international business development, and building strong client and business partnerships.
-              </p>
-              <p className="mt-5 max-w-xl text-base leading-8 text-slate-600">
-                He holds a BEng (Hons) in Electronic and Electrical Engineering from the University of Sunderland and an IATA Travel and Tourism Consultancy Diploma (DTTC). His expertise includes global legal systems, policy frameworks, basic administrative procedures, portal navigation, appointment-scheduling logistics, document scrutiny, turnaround time (TAT) tracking, biometric-process coaching, upselling value-added services (VAS), and VFS handling.
-              </p>
-            </div>
-          </div>
-          <div className="relative min-h-[420px] overflow-hidden bg-slate-200 sm:min-h-[520px] lg:order-last lg:min-h-0">
-            <img
-              src={rasikaPrasad}
-              alt="Mr. Rasika Prasad, General Manager of Elladria Lanka"
-              loading="lazy"
-              className="absolute inset-0 h-full w-full object-cover object-center"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-ro-blue/35 via-transparent to-transparent" aria-hidden="true" />
-          </div>
-        </div>
-      </section>
+      {/* General Manager profile is temporarily hidden. */}
 
       <section className="mt-20" aria-labelledby="why-choose-title">
         <div className="mx-auto max-w-3xl text-center">
