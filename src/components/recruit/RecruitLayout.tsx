@@ -163,14 +163,15 @@ export function RecruitLayout() {
             >
               Book an appointment
             </a>
-            <a
-              href={companyProfileUrl}
-              download="Elladria-Lanka-Company-Profile.pdf"
-              className="flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium text-white/75 transition-colors hover:bg-white/10 hover:text-white"
+            <button
+              type="button"
+              disabled
+              title="Company profile download is temporarily unavailable"
+              className="flex cursor-not-allowed items-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium text-white/40"
             >
               <Download className="h-4 w-4" />
               Company Profile
-            </a>
+            </button>
           </nav>
 
           <button
@@ -206,15 +207,15 @@ export function RecruitLayout() {
             >
               Book an appointment
             </a>
-            <a
-              href={companyProfileUrl}
-              download="Elladria-Lanka-Company-Profile.pdf"
-              onClick={() => setOpen(false)}
-              className="mt-2 flex items-center justify-center gap-2 rounded-lg border border-white/15 px-4 py-2.5 text-sm font-medium text-white/80 hover:bg-white/10 hover:text-white"
+            <button
+              type="button"
+              disabled
+              title="Company profile download is temporarily unavailable"
+              className="mt-2 flex w-full cursor-not-allowed items-center justify-center gap-2 rounded-lg border border-white/15 px-4 py-2.5 text-sm font-medium text-white/40"
             >
               <Download className="h-4 w-4" />
               Download Company Profile
-            </a>
+            </button>
           </nav>
         )}
         <motion.div initial={false} animate={{ scaleX: scrolled ? 1 : 0, opacity: scrolled ? 1 : 0 }} transition={{ duration: 0.4 }} className="absolute inset-x-0 bottom-0 h-px origin-center bg-gradient-to-r from-transparent via-ro-yellow/55 to-transparent" aria-hidden="true" />
